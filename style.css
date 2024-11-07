@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#fechaFabricacion {
+    margin: 0 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+
+}
+
+#fechaVencimiento {
+    margin: 0 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+input,
+button {
+    margin: 10px 0;
+}
+
+/* Estilos para organizar los checkboxes en dos columnas */
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.checkbox-container label {
+    flex: 1 1 45%;
+    /* Cada checkbox ocupará aproximadamente la mitad del ancho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fila-check {
+    width: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

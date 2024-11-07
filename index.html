@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Dorian GYM</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generador de Stickers</h1>
+        <form id="etiquetaForm">
+            <!-- Campo para la fecha de fabricación -->
+            <label for="fechaFabricacion">Fecha de Fabricación:</label>
+            <input type="date" id="fechaFabricacion" required>
+
+            <!-- Campo para la fecha de vencimiento -->
+            <label for="fechaVencimiento">Fecha de Vencimiento:</label>
+            <input type="date" id="fechaVencimiento" required>
+
+            <!-- Checkboxes para seleccionar filas -->
+            <h3>Selecciona las filas que deseas generar:</h3>
+            <div class="checkbox-container">
+                <label><input type="checkbox" id="fila1" class="fila-check"> Fila 1</label>
+                <label><input type="checkbox" id="fila2" class="fila-check"> Fila 2</label>
+                <label><input type="checkbox" id="fila3" class="fila-check"> Fila 3</label>
+                <label><input type="checkbox" id="fila4" class="fila-check"> Fila 4</label>
+                <label><input type="checkbox" id="fila5" class="fila-check"> Fila 5</label>
+                <label><input type="checkbox" id="fila6" class="fila-check"> Fila 6</label>
+                <label><input type="checkbox" id="todos" onclick="seleccionarTodos()"> Todos</label>
+            </div>
+
+            <!-- Botón para generar el PDF -->
+            <button type="button" onclick="generarEtiquetas()">Generar Etiquetas</button>
+        </form>
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+
+    <!-- Bibliotecas necesarias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+
+</html>
