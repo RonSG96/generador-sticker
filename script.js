@@ -43,30 +43,41 @@ async function generarEtiquetas() {
 
     // Coordenadas de texto dentro de cada cuadro blanco para cada fila
     const posicionesFabricacion = [
-      { x: 10, y: 46 },
-      { x: 60, y: 46 },
-      { x: 110, y: 46 },
-      { x: 160, y: 46 }, // PRIMERA FILA
-      { x: 10, y: 94 },
-      { x: 60, y: 94 },
-      { x: 110, y: 94 },
-      { x: 160, y: 94 }, // SEGUNDA FILA
-      { x: 10, y: 142 },
-      { x: 60, y: 142 },
-      { x: 110, y: 142 },
-      { x: 160, y: 142 }, // TERCERA FILA
-      { x: 10, y: 189 },
-      { x: 60, y: 189 },
-      { x: 110, y: 189 },
-      { x: 160, y: 189 }, // CUARTA FILA
-      { x: 10, y: 237 },
-      { x: 60, y: 237 },
-      { x: 110, y: 237 },
-      { x: 160, y: 237 }, // QUINTA FILA
-      { x: 10, y: 285 },
-      { x: 60, y: 285 },
-      { x: 110, y: 285 },
-      { x: 160, y: 285 }, // SEXTA FILA
+      // PRIMERA FILA
+      { x: 10, y: 48 },
+      { x: 60, y: 48 },
+      { x: 110, y: 48 },
+      { x: 160, y: 48 },
+
+      // SEGUNDAFILA
+      { x: 10, y: 96 },
+      { x: 60, y: 96 },
+      { x: 110, y: 96 },
+      { x: 160, y: 96 },
+
+      // TERCERA FILA
+      { x: 10, y: 146 },
+      { x: 60, y: 146 },
+      { x: 110, y: 146 },
+      { x: 160, y: 146 },
+
+      //CUARTA FILA
+      { x: 10, y: 195 },
+      { x: 60, y: 195 },
+      { x: 110, y: 195 },
+      { x: 160, y: 195 },
+
+      //QUINTA FILA
+      { x: 10, y: 244 },
+      { x: 60, y: 244 },
+      { x: 110, y: 244 },
+      { x: 160, y: 244 },
+
+      //SEXTA FILA
+      { x: 10, y: 294 },
+      { x: 60, y: 294 },
+      { x: 110, y: 294 },
+      { x: 160, y: 294 },
     ];
 
     const etiquetasPorFila = 4;
